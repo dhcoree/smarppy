@@ -8,7 +8,7 @@
           </div>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" placeholder="Insira seu nome..." class="form-control" name="nome" v-on:input="nome = $event.target.value" :disabled="desabilitado" />
+              <input type="text" placeholder="Insira seu nome..." class="form-control" name="nome" @input="nome = $event.target.value" :disabled="desabilitado" />
             </div>
             <button type="button" @click="comecar()" :disabled="desabilitado || nome == ''" class="btn btn-default">Jogar!</button>
             <button type="button" @click="reiniciar()" :disabled="!desabilitado" class="btn btn-default">Começar Novo Jogo!</button>
@@ -25,7 +25,7 @@
       <div class="cartas container" v-if="!pararJogo">
         <div class="carta" v-for="(carta, index) in cartas" :key="'carta' + index" :class="{ virada: carta.virada, correta: carta.correta}" @click="virarCarta(carta)">
           <div class="costas"></div>
-          <div class="frente" v-bind:style="{ backgroundImage: 'url(' + carta.url + ')' }"></div>
+          <div class="frente" :style="{ backgroundImage: 'url(' + carta.url + ')' }"></div>
         </div>
         
       </div>
@@ -371,11 +371,11 @@ export default {
 
   .navbar {
     margin: 0;
-    background-color: #220126;
+    background-color: #0D0D0D;
   }
 
   .mesa {
-    background-color: #4F0259;
+    background-color: #8C0C02;
     padding: 20px;
     min-height: 100%;
     display: block;
@@ -407,7 +407,7 @@ export default {
     transition: transform 0.5s;
     transform-style: preserve-3d;
     
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px rgba(13, 13, 13, 0.2);
   }
 
   .cartas .carta .costas {
@@ -478,8 +478,8 @@ export default {
 
 #botao {
     color: #fff;
-    background-color: #27012c;
-    border-color: #4F0259;
+    background-color: #0D0D0D;
+    border-color: #222222;
 }
 
 
