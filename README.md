@@ -1,6 +1,6 @@
-# Repositório para teste de emprego na vaga VUEJS jr da empresa smarppy
+# Repositório teste Vuejs na vaga desenvolvedor web jr da empresa Smarppy 
 
-- O teste consiste em elaborar um jogo da memoria utilizando Vuejs;
+- O teste consiste em elaborar um jogo da memoria utilizando Vuejs
 
 
 
