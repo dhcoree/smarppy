@@ -55,7 +55,7 @@
                   <td>{{ jogador.nome }}</td>
                   <td>{{ jogador.tempo }}s</td>
                   <td>{{ jogador.rodadas }}</td>
-                </tr>
+                </tr> 
               </tbody>
             </table>
           </div>
@@ -367,6 +367,11 @@ export default {
 
   * {
     box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  html, body {
+    overflow: hidden;
   }
 
   .navbar {
