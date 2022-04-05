@@ -4,7 +4,7 @@
       <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="">Jogo de Memória</a>
+            <a class="navbar-brand" href="">Jogo da Memória</a>
           </div>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
@@ -302,7 +302,7 @@ export default {
 
               this.desvirar();
 
-          }, 750);
+          }, 900);
 
         }
 
