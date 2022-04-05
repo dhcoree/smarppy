@@ -1,8 +1,8 @@
 {
   "name": "jogodememoria",
-  "description": "Jogo de Memória",
+  "description": "Jogo da Memória",
   "version": "1.0.0",
-  "author": "Luiz Fernando Maehana",
+  "author": "DH",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
